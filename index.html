@@ -1,0 +1,38 @@
+<html>
+<head><title>My family page</title><link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&family=Palanquin+Dark:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1> मेरा परिवार</h1>
+    <h2>अब तक का सबसे अच्छा परिवार</h2>
+
+    <img id="pic" src="https://png.pngtree.com/png-clipart/20190115/ourmid/pngtree-fathers-day-father-care-daughter-png-image_344181.jpg">
+    <p id="name">My dad</p>
+    <br>
+    <hr>
+    <br>
+    <button onclick="nextslide()"> other family members </button>
+    <script>
+     var members= [ " My mom - thesaviour.","Me = running from life", " my grandparents -best ", "my grandparents -best ", "my dad"];
+    var img = ["https://i.gifer.com/7iks.gif","https://i.pinimg.com/originals/0e/37/36/0e3736fca4d0b734305997f604218d7a.gif",
+    "https://i.pinimg.com/originals/9f/c8/f3/9fc8f3e7b0dc902ae32bb2d3a174b316.gif", "https://cdn.dribbble.com/users/3268946/screenshots/6983065/sem-t_tulo-1.gif", 
+    "https://png.pngtree.com/png-clipart/20190115/ourmid/pngtree-fathers-day-father-care-daughter-png-image_344181.jpg"  ];
+    var i=0;
+function nextslide(){
+ document.getElementById ("name").innerHTML=members[i];
+  document.getElementById("pic").src=img[i];
+  i++; if(i > 4){
+      i=0;
+  }
+}
+
+    </script>
+</body>
+
+
+</html>
